@@ -20,7 +20,7 @@ app.get("/", function (req, res, next) {
   vCard.firstName = "James";
   vCard.lastName = "Johnson";
   vCard.cellPhone = "631-495-0416";
-  vCard.email = "james@jamesjohnson.io";
+  vCard.workEmail = "james@jamesjohnson.io";
   vCard.url = "https://www.jamesjohnson.io";
 
   res.set("Content-Type", 'text/vcard; name="jjohnson.vcf"');
