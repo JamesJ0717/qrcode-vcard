@@ -19,8 +19,11 @@ app.get("/", function (req, res, next) {
   var vCard = vcardsjs();
   vCard.firstName = "James";
   vCard.lastName = "Johnson";
+  vCard.title = "Software, Network, and Security Engineer";
+  vCard.birthday = new Date(1998, 6, 17);
   vCard.cellPhone = "631-495-0416";
   vCard.workEmail = "james@jamesjohnson.io";
+  vCard.socialUrls["linkedIn"] = "jamesjjjohnson"; //http://www.linkedin.com/in/CHARSET=UTF-8%3Blinkedin.com/in/jamesjjjohnson
   vCard.url = "https://www.jamesjohnson.io";
 
   res.set("Content-Type", 'text/vcard; name="jjohnson.vcf"');
