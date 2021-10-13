@@ -23,10 +23,10 @@ app.get("/", function (req, res, next) {
   vCard.birthday = new Date(1998, 6, 17);
   vCard.cellPhone = "631-495-0416";
   vCard.workEmail = "james@jamesjohnson.io";
-  vCard.socialUrls["linkedIn"] = "jamesjjjohnson"; // http://www.linkedin.com/in/CHARSET=UTF-8%3Bjamesjjjohnson
+  vCard.socialUrls["linkedIn"] = "jamesjjjohnson"; // http://www.linkedin.com/in/jamesjjjohnson
   vCard.url = "https://www.jamesjohnson.io";
   vCard.source = "https://qr.jamesjohnson.io";
-  vCard.workUrl = "https://jamesjohnson.io/jj_resume/";
+  vCard.workUrl = "https://jamesj0717.github.io/resume/JJ_Resume.pdf";
 
   res.set("Content-Type", 'text/vcard; name="jjohnson.vcf"');
   res.set("Content-Disposition", 'inline; filename="jjohnson.vcf"');
