@@ -11,7 +11,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   vCard.birthday = new Date(1998, 6, 17);
   vCard.cellPhone = "631-495-0416";
   vCard.workPhone = "631-316-3290";
-  vCard.personalEmail = "james@jamesjohnson.io";
+  vCard.email = "james@jamesjohnson.io";
   vCard.workEmail = "james@jjjtechconsulting.com";
   vCard.socialUrls["linkedIn"] = "jamesjjjohnson"; // http://www.linkedin.com/in/jamesjjjohnson
   vCard.url = "https://www.jamesjohnson.io";
