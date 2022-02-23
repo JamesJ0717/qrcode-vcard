@@ -1,7 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
@@ -13,13 +13,12 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <h1>Contact Me</h1>
+
         <img src="/21959167-9095-4D17-95C4-3885293E59A0_1_102_o.jpeg" />
       </main>
-
-      <footer className={styles.footer}>
-      </footer>
     </div>
-  )
-}
+  );
+};
 
 export default Home;
