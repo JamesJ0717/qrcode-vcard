@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -21,6 +22,10 @@ const Home: NextPage = () => {
             height={400}
             width={400}
           />
+        </div>
+
+        <div className={styles.card}>
+          <Link href={"/api/qr"}>Download vCard</Link>
         </div>
       </main>
     </div>
