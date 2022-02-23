@@ -10,11 +10,13 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   vCard.title = "Software, Network, and Security Engineer";
   vCard.birthday = new Date(1998, 6, 17);
   vCard.cellPhone = "631-495-0416";
-  vCard.workEmail = "james@jamesjohnson.io";
+  vCard.workPhone = "631-316-3290";
+  vCard.personalEmail = "james@jamesjohnson.io";
+  vCard.workEmail = "james@jjjtechconsulting.com";
   vCard.socialUrls["linkedIn"] = "jamesjjjohnson"; // http://www.linkedin.com/in/jamesjjjohnson
   vCard.url = "https://www.jamesjohnson.io";
-  vCard.source = "https://qr.jamesjohnson.io";
-  vCard.workUrl = "https://jamesj0717.github.io/resume/JJ_Resume.pdf";
+  vCard.workUrl = "https://jjjtechconsulting.com";
+  vCard.source = "https://qr.jamesjohnson.io/api/qr";
 
   res.setHeader("Content-Type", 'text/vcard; name="jjohnson.vcf"');
   res.setHeader("Content-Disposition", 'inline; filename="jjohnson.vcf"');
