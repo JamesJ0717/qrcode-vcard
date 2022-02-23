@@ -15,7 +15,13 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <h1>Contact Me</h1>
 
-        <img src="/21959167-9095-4D17-95C4-3885293E59A0_1_102_o.jpeg" />
+        <div className={styles.qr}>
+          <Image
+            src="/21959167-9095-4D17-95C4-3885293E59A0_1_102_o.jpeg"
+            height={400}
+            width={400}
+          />
+        </div>
       </main>
     </div>
   );
