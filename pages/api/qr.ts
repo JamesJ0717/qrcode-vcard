@@ -15,8 +15,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   vCard.workEmail = "james@jjjtechconsulting.com";
   vCard.socialUrls["linkedIn"] = "jamesjjjohnson"; // http://www.linkedin.com/in/jamesjjjohnson
   vCard.url = "https://www.jamesjohnson.io";
-  vCard.workUrl = "https://jjjtechconsulting.com";
-  vCard.note = "Schedule a meeting: https://www.calendly.com/jjjtech"
+  vCard.workUrl = "https://www.jjjtechconsulting.com";
+  vCard.calUrl = "https://www.calendly.com/jjjtech"
   vCard.source = "https://qr.jamesjohnson.io/api/qr";
 
   res.setHeader("Content-Type", 'text/vcard; name="jjohnson.vcf"');
