@@ -28,7 +28,10 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.card}>
-          <Link href={"/api/qr"}>Download vCard</Link>
+          <Link href={"/api/personal"}>Download Personal vCard</Link>
+        </div>
+        <div className={styles.card}>
+          <Link href={"/api/qr"}>Download Business vCard</Link>
         </div>
       </main>
     </div>

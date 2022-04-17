@@ -7,13 +7,11 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   let vCard = vcardsjs();
   vCard.firstName = "James";
   vCard.lastName = "Johnson";
-  vCard.title = "Software, Network, and Security Engineer";
-  vCard.workPhone = "631-316-3290";
-  vCard.workEmail = "james@jjjtechconsulting.com";
-  vCard.socialUrls["linkedIn"] = "jamesjjjohnson"; // http://www.linkedin.com/in/jamesjjjohnson
-  vCard.workUrl = "https://www.jjjtechconsulting.com";
-  vCard.calUrl = "https://www.calendly.com/jjjtech";
-  vCard.source = "https://qr.jamesjohnson.io/api/qr";
+  vCard.birthday = new Date(1998, 6, 17);
+  vCard.homePhone = "631-495-0416";
+  vCard.email = "james@jamesjohnson.io";
+  vCard.url = "https://www.jamesjohnson.io";
+  vCard.source = "https://qr.jamesjohnson.io/api/personal";
 
   res.setHeader("Content-Type", 'text/vcard; name="jjohnson.vcf"');
   res.setHeader("Content-Disposition", 'inline; filename="jjohnson.vcf"');
