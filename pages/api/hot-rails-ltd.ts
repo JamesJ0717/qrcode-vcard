@@ -8,7 +8,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   vCard.firstName = "J";
   vCard.lastName = "J";
   vCard.homePhone = "781-818-5747";
-  vCard.company = "Hot Rails Ltd.";
+  vCard.org = "Hot Rails Ltd.";
   vCard.nickname = "Purveyor of Verboten Esoteric Stones";
 
   res.setHeader("Content-Type", 'text/vcard; name="jj.vcf"');
